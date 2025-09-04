@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import './BallAndLine.css'
 
-let days: number[] = [1, 4, 7, 12]
 
 type DayInfo = {
     content: string,
