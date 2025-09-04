@@ -4,3 +4,4 @@ Things i wanna add to the page?
 2.Put a "word counter" or something below or above each day
 3.Make website scroll to the right ad infinitum 
 4.Create "months" system (currently  i only have days);
+5.A Tab with a list of projects i'd like to make, have made, and am making
