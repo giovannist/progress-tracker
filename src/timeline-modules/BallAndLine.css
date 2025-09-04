@@ -1,0 +1,39 @@
+.ball {
+    background-color: rgb(187, 204, 236);
+    color: black;
+    border: 10px double #1d1d33;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.ball:hover {
+    color: rgb(97, 114, 158);
+    background-color: rgb(215, 220, 252);
+}
+
+.line {
+    height: 10px;
+    width: 100px;
+    background-color: rgb(79, 91, 129);
+}
+
+.full-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-ui {
+    background-color: rgb(79, 91, 129);
+    width: 100px;
+    height: auto;
+    position: absolute;
+    top: 80px;
+    left: 82px;
+}
