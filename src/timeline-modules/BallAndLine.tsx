@@ -17,10 +17,10 @@ let dayInfo: DayInfo[] = [
 
 ]
 
-function Ball({ day }: { day: number }) {
+function Ball({ day, isActive }: { day: number, isActive: boolean }) {
     return (
         <>
-            <div className="ball">
+            <div className={(isActive) ? 'ball-active' : 'ball'}  >
                 <div>
                     {day}
                 </div>
@@ -46,7 +46,7 @@ function BallAndLine({ day }: { day: DayInfo }) {
             style={{ display: "flex", alignItems: 'center', justifyContent: 'center', position: 'relative' }}
         >
             <Line />
-            <Ball day={day.day} />
+            <Ball day={day.day} isActive={isOpened} />
             {(isOpened) && <ContentUI content={{ content: day.content, image: day.image }} />}
         </div>
     )
