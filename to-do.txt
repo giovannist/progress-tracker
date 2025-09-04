@@ -1,0 +1,6 @@
+Things i wanna add to the page?
+
+1.Put Images in the text boxes
+2.Put a "word counter" or something below or above each day
+3.Make website scroll to the right ad infinitum 
+4.Create "months" system (currently  i only have days);

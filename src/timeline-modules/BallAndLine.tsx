@@ -10,20 +10,11 @@ type DayInfo = {
 
 let dayInfo: DayInfo[] = [
     {
-        day: 1,
-        content: 'i did this and that and also this thing',
+        day: 3,
+        content: "Hey, welcome to the first entry! In summary, i plan this page to be something like a log for myself and for anyone interested/curious, i'll be recording anything programming-related that i'm working on, and hopefully be able to see my growth just with this line. I just finished the most barebone system i could make for this, i can only add text for now. Today is the 9th of September 2025, i've been coding for roughly 5 months, and let's see where things go from here, i wanna make it so i can put images on these, i'll probably do it tomorrow",
         image: null
     },
-    {
-        day: 4,
-        content: 'i did this thing too and also this one',
-        image: null
-    },
-    {
-        day: 12,
-        content: 'you wont believe what i did today my man',
-        image: null
-    }
+
 ]
 
 function Ball({ day }: { day: number }) {
@@ -56,15 +47,16 @@ function BallAndLine({ day }: { day: DayInfo }) {
         >
             <Line />
             <Ball day={day.day} />
-            {(isOpened) && <ContentUI content={day.content} />}
+            {(isOpened) && <ContentUI content={{ content: day.content, image: day.image }} />}
         </div>
     )
 }
 
-function ContentUI({ content }: { content: string }) {
+function ContentUI({ content }: { content: { content: string, image: string | null } }) {
     return (
         <div className='content-ui'>
-            {content}
+            {content.content}
+            {content.image}
         </div>
     )
 }

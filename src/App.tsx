@@ -4,11 +4,10 @@ import FullLine from './timeline-modules/BallAndLine'
 function App() {
 
     return (
-        <>
+        <div style={{ display: 'flex', justifyContent: 'left', alignItems: 'center' }}>
             <title>Progress Tracker</title>
-            <h2>foi em</h2>
             <FullLine />
-        </>
+        </div>
 
     )
 }

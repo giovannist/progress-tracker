@@ -18,8 +18,8 @@
 }
 
 .line {
-    height: 10px;
-    width: 100px;
+    height: 8px;
+    width: 400px;
     background-color: rgb(79, 91, 129);
 }
 
@@ -31,9 +31,13 @@
 
 .content-ui {
     background-color: rgb(79, 91, 129);
-    width: 100px;
+    width: 300px;
     height: auto;
     position: absolute;
-    top: 80px;
-    left: 82px;
+    top: 100px;
+    left: 265px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 5px double rgb(79, 91, 129);
+    text-align: justify;
 }
